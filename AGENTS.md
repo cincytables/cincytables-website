@@ -1,7 +1,6 @@
 # Cincy Tables website
 
-The website for Cincy Tables, a custom furniture shop in Harrison, Ohio. It is
-live at cincytables.com, served by GitHub Pages from the `main` branch.
+The website for Cincy Tables, a custom furniture shop in Harrison, Ohio. It is served by GitHub Pages from the `main` branch.
 
 ## How the site is built
 
@@ -37,6 +36,7 @@ RJ owns this site and is not technical. He only talks to you. Never ask him to
 use git, GitHub, branches, or pull requests, and never use those words with him.
 
 Every conversation:
+
 1. A hook pulls the latest version when the session starts. If it reports a
    failure, do not change anything. Tell RJ to contact Jimmy.
 2. Make the change he asks for.

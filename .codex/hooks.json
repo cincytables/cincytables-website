@@ -19,7 +19,8 @@
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/stop.sh\"",
-            "timeout": 10
+            "statusMessage": "Saving and publishing site changes",
+            "timeout": 60
           }
         ]
       }
