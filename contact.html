@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Request a Quote | Cincy Tables</title>
+  <meta name="description" content="Request a quote for a custom dining table, conference table, or one-of-a-kind piece from Cincy Tables in Harrison, Ohio.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..700&family=Jost:wght@300;400;500&family=Newsreader:ital,opsz,wght@0,6..72,300..500;1,6..72,300..500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">Cincy Tables</a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+      <nav class="nav" id="nav">
+        <a href="index.html#work">Work</a>
+        <a href="about.html">About</a>
+        <a href="index.html#process">Process</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero grain">
+      <img class="page-hero-img" src="images/xo-3.jpg" alt="">
+      <div class="wrap">
+        <p class="label ruled reveal">Request a Quote</p>
+        <h1 class="serif reveal" style="--d:1">Built for those who notice <em>the difference.</em></h1>
+        <p class="lede reveal" style="--d:2">Built to last a lifetime.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap quote">
+
+        <div class="quote-aside">
+          <p class="label ruled">Let's Talk</p>
+          <h2 class="serif">Tell me about <em>your piece.</em></h2>
+          <p>We're a small woodworking studio focused on creating furniture with character, purpose, and permanence. Every piece is thoughtfully designed and carefully built by hand, with an emphasis on honest materials, refined details, and craftsmanship that holds up over time.</p>
+          <p>We work with homeowners, designers, and businesses looking for something beyond mass-produced furniture. If you have an idea, a space that needs something special, or simply want a piece made your way, we'd love to build it.</p>
+          <ul class="contact-list">
+            <li><span>Email</span><a href="mailto:ryan@cincytables.com">ryan@cincytables.com</a></li>
+            <li><span>Phone</span><a href="tel:+18652375982">865-237-5982</a></li>
+            <li><span>Instagram</span><a href="https://www.instagram.com/cincytables/" target="_blank" rel="noopener">@cincytables</a></li>
+            <li><span>Facebook</span><a href="https://www.facebook.com/profile.php?id=61554300565181" target="_blank" rel="noopener">Cincy Tables</a></li>
+            <li><span>Shop</span>Harrison, Ohio</li>
+          </ul>
+        </div>
+
+        <!-- Quote requests are emailed to ryan@cincytables.com through formsubmit.co.
+             The first submission sends Ryan a one-time email asking him to activate the form. -->
+        <form class="quote-form" action="https://formsubmit.co/ryan@cincytables.com" method="POST">
+          <input type="hidden" name="_subject" value="New quote request from cincytables.com">
+          <input type="hidden" name="_template" value="table">
+          <input class="honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+
+          <div class="field">
+            <label for="name">Full name *</label>
+            <input id="name" name="Name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="email">Email *</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+            <div class="field">
+              <label for="phone">Phone *</label>
+              <input id="phone" name="Phone" type="tel" autocomplete="tel" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="piece">What are you looking to create? *</label>
+            <input id="piece" name="Piece" type="text" placeholder="Dining table, conference table, console..." required>
+          </div>
+          <div class="field">
+            <label for="details">Describe what you have in mind *</label>
+            <textarea id="details" name="Details" required></textarea>
+            <p class="hint">We'll ask for inspiration images once we receive your quote request.</p>
+          </div>
+          <div class="field">
+            <label for="budget">Budget *</label>
+            <select id="budget" name="Budget" required>
+              <option value="" disabled selected>Choose a range</option>
+              <option>Under $1,500</option>
+              <option>$1,500&ndash;$3,000</option>
+              <option>$3,000&ndash;$4,500</option>
+              <option>$4,500&ndash;$6,000</option>
+              <option>$6,000+</option>
+            </select>
+            <p class="hint">This helps us understand your project and offer options that fit your range. Custom dining tables start at $3,000, and our average is $4,000&ndash;$5,000.</p>
+          </div>
+          <button class="btn btn-dark" type="submit">Submit Request <span class="arrow">&rarr;</span></button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer grain">
+    <div class="wrap footer-top">
+      <div>
+        <a class="brand" href="index.html">Cincy Tables</a>
+        <p>Custom heirloom furniture, handcrafted from locally sourced hardwoods in Harrison, Ohio.</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:ryan@cincytables.com">ryan@cincytables.com</a></li>
+          <li><a href="tel:+18652375982">865-237-5982</a></li>
+          <li>Harrison, Ohio</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow</h4>
+        <ul class="social">
+          <li><a href="https://www.instagram.com/cincytables/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor"/></svg>Instagram</a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=61554300565181" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M13.5 21v-7.5h2.5l.4-3h-2.9V8.6c0-.9.3-1.5 1.5-1.5h1.5V4.4c-.3 0-1.2-.1-2.2-.1-2.2 0-3.7 1.3-3.7 3.8v2.4H8v3h2.6V21h2.9z"/></svg>Facebook</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap footer-bottom">&copy; 2026 Cincy Tables &middot; Ryan Johnson, Maker</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
