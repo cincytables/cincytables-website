@@ -98,5 +98,5 @@ if __name__ == "__main__":
             print(f"Local site preview: http://127.0.0.1:{port}/")
             print("Open this URL in the browser. Refresh after edits; the files are served directly.")
         except (OSError, RuntimeError) as error:
-            print(f"Local preview could not start: {error}. Tell RJ to contact Jimmy.")
+            print(f"Local preview could not start: {error}. Explain the failure to RJ in plain language and describe how you will fix it.")
             sys.exit(1)

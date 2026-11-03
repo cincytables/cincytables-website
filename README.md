@@ -3,7 +3,7 @@
 Website for Cincy Tables, a custom furniture shop in Harrison, Ohio.
 
 This is the replacement website in preparation for handoff to RJ. It is not
-currently the live site at cincytables.com. After Jimmy transfers the site to RJ
+currently the live site at cincytables.com. After the site is transferred to RJ
 and RJ moves the domain over, cincytables.com will serve this website.
 
 ## Preview
@@ -25,7 +25,7 @@ saying "looks good" does not publish anything.
 The assistant handles saving and publishing. Until the handoff and domain move,
 publishing updates the replacement site, not the current cincytables.com site.
 
-## Setup and maintenance for Jimmy
+## Setup and maintenance
 
 - Install Python 3.9 or newer and make `python3` available to Codex before handoff.
 - Set up repository access and verify the startup hook runs in RJ's environment.

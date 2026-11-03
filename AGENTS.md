@@ -2,7 +2,7 @@
 
 The replacement website for Cincy Tables, a custom furniture shop in Harrison,
 Ohio. It is served by GitHub Pages from the `main` branch, but it is not currently
-the live site at cincytables.com. Jimmy will transfer the site to RJ, then RJ will
+the live site at cincytables.com. The site will be transferred to RJ, then RJ will
 move the domain over. Only after that handoff and domain move will
 cincytables.com serve this website.
 
@@ -39,11 +39,18 @@ Give every image a short `alt` description.
 RJ owns this site and is not technical. He only talks to you. Never ask him to
 use git, GitHub, branches, or pull requests, and never use those words with him.
 
+When something fails, explain the failure in plain language and say what you
+will do to fix it. Investigate and carry out safe repairs yourself, preserving
+unfinished work. If a repair needs access or
+information you do not have, explain the specific blocker and ask only for what
+is needed; do not promise a fix you cannot carry out.
+
 ### Start and preview
 
 - The SessionStart hook checks for updates and starts or reuses the local preview.
   It preserves unfinished work instead of stashing or publishing it. If it reports
-  a sync failure, do not edit or publish; tell RJ to contact Jimmy.
+  a sync failure, resolve it before editing or publishing. Explain what failed
+  and how you will fix it, preserving unfinished work.
 - Open the preview URL printed by the hook in the browser. Use the changed page's
   route, such as `/about.html`. Use HTTP, never a `file://` URL.
 - If the preview has stopped, run `python3 .codex/hooks/preview.py` from the site
@@ -64,8 +71,11 @@ use git, GitHub, branches, or pull requests, and never use those words with him.
 - Do not ask for another confirmation after an explicit publish request unless
   the changes include unrelated work whose inclusion is unclear.
 - If the push fails, run `git pull --rebase origin main` and push again. If the
-  rebase conflicts, abort it to preserve local work and tell RJ to contact Jimmy.
-  If the second push fails, tell him to contact Jimmy and do not try anything else.
+  rebase conflicts, abort it to preserve local work, inspect the conflicting
+  changes, and resolve them while preserving the intended edits. Check the
+  result before retrying publication. If the second push fails, diagnose the
+  actual error and fix its cause before retrying; do not repeat failing commands
+  blindly. Explain the failure and your repair plan in plain language.
 - After a successful publish, say the update will appear in about a minute.
   Only say it will be live at cincytables.com after the handoff and domain move
   are complete. Before then, call it an update to the replacement site.
