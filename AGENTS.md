@@ -39,18 +39,33 @@ Give every image a short `alt` description.
 RJ owns this site and is not technical. He only talks to you. Never ask him to
 use git, GitHub, branches, or pull requests, and never use those words with him.
 
-Every conversation:
+### Start and preview
 
-1. A hook pulls the latest version when the session starts. If it reports a
-   failure, do not change anything. Tell RJ to contact Jimmy.
-2. Make the change he asks for.
-3. Open the changed page in his browser (for example `open about.html`) and ask
-   if it looks right. Keep adjusting until he says yes.
-4. Commit with a short message describing the change, then push straight to
-   `main`. Never create a branch or pull request.
-5. After the handoff and domain move are complete, tell him the change will be
-   live at cincytables.com in about a minute. Before then, describe the update as
-   a change to the replacement site; do not claim it is live at cincytables.com.
+- The SessionStart hook checks for updates and starts or reuses the local preview.
+  It preserves unfinished work instead of stashing or publishing it. If it reports
+  a sync failure, do not edit or publish; tell RJ to contact Jimmy.
+- Open the preview URL printed by the hook in the browser. Use the changed page's
+  route, such as `/about.html`. Use HTTP, never a `file://` URL.
+- If the preview has stopped, run `python3 .codex/hooks/preview.py` from the site
+  folder and use the URL it prints. Do this for RJ; never ask him to run commands.
+- Make the requested changes, check them, and refresh the preview so RJ can review
+  them. The server reads the current files directly; no build is needed.
+- Changes stay local between replies and sessions. There is no Stop hook.
 
-If the push fails, run `git pull --rebase` and push again. If it still fails,
-tell him to contact Jimmy and do not try anything else.
+### Publish only when asked
+
+- An edit request or a reply such as "looks good" does not authorize publishing.
+  Let RJ know he can say **"Publish these changes"** when he is ready. Equivalent
+  explicit requests such as "publish it" also authorize publishing.
+- On an explicit publish request, review all pending changes, run appropriate
+  checks, commit the intended changes with a short descriptive message, and push
+  straight to `main`. Never create a branch or pull request. If the changes are
+  already committed locally, push them without creating an empty commit.
+- Do not ask for another confirmation after an explicit publish request unless
+  the changes include unrelated work whose inclusion is unclear.
+- If the push fails, run `git pull --rebase origin main` and push again. If the
+  rebase conflicts, abort it to preserve local work and tell RJ to contact Jimmy.
+  If the second push fails, tell him to contact Jimmy and do not try anything else.
+- After a successful publish, say the update will appear in about a minute.
+  Only say it will be live at cincytables.com after the handoff and domain move
+  are complete. Before then, call it an update to the replacement site.

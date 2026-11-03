@@ -7,20 +7,8 @@
           {
             "type": "command",
             "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/session-start.sh\"",
-            "statusMessage": "Getting the latest version of the site",
+            "statusMessage": "Preparing the site and local preview",
             "timeout": 30
-          }
-        ]
-      }
-    ],
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "bash \"$(git rev-parse --show-toplevel)/.codex/hooks/stop.sh\"",
-            "statusMessage": "Saving and publishing site changes",
-            "timeout": 60
           }
         ]
       }
