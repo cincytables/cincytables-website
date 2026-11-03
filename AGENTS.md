@@ -1,6 +1,10 @@
 # Cincy Tables website
 
-The website for Cincy Tables, a custom furniture shop in Harrison, Ohio. It is served by GitHub Pages from the `main` branch.
+The replacement website for Cincy Tables, a custom furniture shop in Harrison,
+Ohio. It is served by GitHub Pages from the `main` branch, but it is not currently
+the live site at cincytables.com. Jimmy will transfer the site to RJ, then RJ will
+move the domain over. Only after that handoff and domain move will
+cincytables.com serve this website.
 
 ## How the site is built
 
@@ -30,7 +34,7 @@ Give every image a short `alt` description.
 - The quote form posts to `formsubmit.co/ryan@cincytables.com`. Do not change
   its `action`.
 
-## Working with RJ
+## Working with RJ after handoff
 
 RJ owns this site and is not technical. He only talks to you. Never ask him to
 use git, GitHub, branches, or pull requests, and never use those words with him.
@@ -44,7 +48,9 @@ Every conversation:
    if it looks right. Keep adjusting until he says yes.
 4. Commit with a short message describing the change, then push straight to
    `main`. Never create a branch or pull request.
-5. Tell him the change will be live at cincytables.com in about a minute.
+5. After the handoff and domain move are complete, tell him the change will be
+   live at cincytables.com in about a minute. Before then, describe the update as
+   a change to the replacement site; do not claim it is live at cincytables.com.
 
 If the push fails, run `git pull --rebase` and push again. If it still fails,
 tell him to contact Jimmy and do not try anything else.

@@ -2,7 +2,9 @@
 
 Website for Cincy Tables, a custom furniture shop in Harrison, Ohio.
 
-Live site: [cincytables.com](https://cincytables.com)
+This is the replacement website in preparation for handoff to RJ. It is not
+currently the live site at cincytables.com. After Jimmy transfers the site to RJ
+and RJ moves the domain over, cincytables.com will serve this website.
 
 ## Preview
 
