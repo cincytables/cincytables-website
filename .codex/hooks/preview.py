@@ -31,7 +31,7 @@ class PreviewHandler(SimpleHTTPRequestHandler):
     def send_head(self):
         path = unquote(urlsplit(self.path).path)
         target = Path(self.translate_path(path)).resolve()
-        allowed = {"index.html", "about.html", "contact.html", "style.css", "script.js"}
+        allowed = {"index.html", "about.html", "contact.html", "style.css", "script.js", "favicon.svg"}
         if path == "/":
             target = ROOT / "index.html"
         if not target.is_relative_to(ROOT) or not (
