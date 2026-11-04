@@ -242,21 +242,6 @@ button { font: inherit; color: inherit; }
 .section-head h2 { margin-top: 22px; font-size: clamp(40px, 5vw, 72px); }
 .section-head > p { max-width: 46ch; color: var(--muted); }
 
-/* ---------- Intro statement ---------- */
-
-.intro { display: grid; grid-template-columns: 1fr 2.2fr; gap: 48px; }
-.intro-text { font-size: clamp(26px, 3vw, 42px); line-height: 1.28; }
-.pillars {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-  margin-top: clamp(56px, 7vw, 96px);
-  grid-column: 2;
-}
-.pillars div { padding-top: 22px; border-top: 1px solid var(--line); }
-.pillars h3 { font-family: var(--serif); font-size: 24px; font-weight: 400; letter-spacing: -0.01em; }
-.pillars p { margin-top: 8px; font-size: 15px; color: var(--muted); }
-
 /* ---------- Featured work ---------- */
 
 .work { background: var(--paper); }
@@ -632,9 +617,6 @@ button { font: inherit; color: inherit; }
   .hero-caption { display: none; }
   .hero-img { inset: auto 0 0 0; height: 140%; }
   .section-head { grid-template-columns: 1fr; }
-
-  .intro { grid-template-columns: 1fr; gap: 24px; }
-  .pillars { grid-column: auto; grid-template-columns: 1fr; gap: 28px; }
 
   .work-grid { grid-template-columns: 1fr; padding-bottom: 0; }
   .work-grid > .piece:nth-child(even) { transform: none; }
