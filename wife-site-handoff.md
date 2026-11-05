@@ -2,8 +2,8 @@
 
 RJ wants a new website for his wife to replace the one she has now. Build it
 the same way as this Cincy Tables site, in its own folder and its own GitHub
-repository in RJ's account. RJ gave you this file, so he is asking you to do
-every step below.
+repository in RJ's account. RJ maintains it, not her. RJ gave you this file,
+so he is asking you to do every step below.
 
 Everything in `AGENTS.md` about working with RJ still applies. Do all of this
 yourself, never ask him to run a command, and never use the words git, GitHub,
@@ -52,7 +52,8 @@ Then change what is specific to Cincy Tables:
 - Write her own `AGENTS.md` and `README.md` modeled on this site's. Keep the
   rules for working with RJ, the preview, and publishing only when asked.
   Replace the Cincy Tables facts with hers: what the site is, its pages, its
-  photos, and her current website address. Until her domain moves, a publish
+  photos, and her current website address. Say that RJ maintains the site and
+  is the person you work with, not her. Until her domain moves, a publish
   updates the new site, not the one at her domain.
 - Add one rule to her `AGENTS.md`. Her domain still points at her old website.
   When RJ asks to move it, write a `domain-handoff.md` for her domain modeled
